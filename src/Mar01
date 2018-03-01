@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Mar01 {
+	
+    public static void main(String args[]) 
+   { 
+                    System.out.print("Please Enter the Sentence : "); 
+                    Scanner sc=new Scanner(System.in); 
+                    String word=sc.nextLine(); 
+                    char[] c=word.toCharArray(); 
+                    char d[]=new char[80]; 
+                    int j=0; 
+                    for(int i=0;i<c.length;i++) 
+                        { 
+                            if(c[i]== 'a' || c[i]== 'e' || c[i]=='i' || c[i]== '0' || c[i]== 'u') 
+                              { 
+                                  continue; 
+                              } 
+                            else 
+                              { 
+                                d[j]=c[i]; 
+                                 j++; 
+                               } 
+                         } 
+                               System.out.print("After Removeing Vowels from a Sentence : "); 
+                               System.out.print(d); 
+       } 
+} 
+
+
