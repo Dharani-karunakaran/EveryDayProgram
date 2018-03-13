@@ -108,7 +108,7 @@ public class FirstList {
 	    public static void main(String[] args) {
 	 
 	        ListName listname = new ListName();
-	            todolist.action();
+	            listname.action();
 	 
 	 
 	    }
