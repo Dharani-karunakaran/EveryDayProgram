@@ -1,0 +1,116 @@
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class ListName {
+	
+    Scanner input = new Scanner(System.in);
+    
+    
+    HashMap<String,String> details = new HashMap<String, String>();
+    
+    
+    public void action(){
+    	
+        while(true){
+         
+            System.out.println("Choose the option :) ");
+            
+            
+            System.out.println("1. Add New List "+"\n"+
+                    "2. Search List "+"\n" +
+                    "3. Delete List"+"\n" +
+                    "4. View Lists"+"\n" +
+                    "5. Exit");
+            
+            int cases=input.nextInt();
+ 
+            switch (cases)
+            {
+                case 1: addList();
+                    break;
+                case 2: searchList();
+                    break;
+                case 3: deleteList();
+                    break;
+                case 4: viewList();
+                    break;
+                case 5:
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Error");
+                    break;
+ 
+            }
+        }
+    }
+    private void addList() 
+    {
+        System.out.print("List name:");
+        String name = input.next(); 
+        String identity= input.next();
+        details.put(name, identity);
+        
+        
+    }
+        
+        //add functions
+      /*  if(name!=null)
+        {
+        	System.out.println("add");
+        	
+      
+        	System.out.println("Close");  
+        
+        System.out.println("Added");
+    }
+    */
+    private void searchList() {
+        System.out.println("Enter The Name : ");
+        String name = input.next();
+        System.out.println(details.containsKey(name) ? "The list " + name + " is : " + details.get(name) : "The list Not Present ");
+    }
+    
+    
+    private void deleteList()
+    {
+        System.out.println("Enter The name to Delete : ");
+        String name = input.next();
+        if (details.containsKey(name)) 
+        {
+            details.remove(name);
+        }
+        else {
+            System.out.printf("The number of %s is not present%n", name);
+        }
+    }
+ 
+   
+ 
+    private void viewList()
+    {
+        for (String name : details.keySet())
+        {
+            if(name!=null) {
+                System.out.println(name+" "+details.get(name));
+            }
+            else System.out.println("Nothing to show");
+        }
+    }
+ 
+   
+    }
+
+
+public class FirstList {
+	
+		 
+	    public static void main(String[] args) {
+	 
+	        ListName listname = new ListName();
+	            todolist.action();
+	 
+	 
+	    }
+	   }
+
