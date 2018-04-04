@@ -1,0 +1,23 @@
+import java.util.Scanner;
+	 
+	public class April04
+	{    
+	    public static void main(String[] args)
+	    {
+	        Scanner sc = new Scanner(System.in);
+	         
+	        System.out.println("Enter the String");
+	         
+	        String input = sc.nextLine();
+	         
+	        String output = input.replaceAll("[AEIOUaeiou]", "");
+	         
+	        System.out.println("After removing vowels:");
+	         
+	        System.out.println(output);
+	         
+	        sc.close();
+	    }
+	}
+
+
