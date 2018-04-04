@@ -1,0 +1,14 @@
+public class April2_03 {
+	 public static void main(String[] args)
+	    {
+	        String str = "Full Creative";
+	        System.out.println("Original String:" + str);
+	        int output1 = str.charAt(4);
+	        int output2 = str.charAt(5);
+            System.out.println("The character at position 0 is " + (char)output1);
+	        System.out.println("The character at position 10 is " + (char)output2);
+	            
+	    }
+	
+
+}
