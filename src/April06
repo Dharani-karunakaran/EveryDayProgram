@@ -1,0 +1,16 @@
+public class April06 {
+
+	public static void main(String a[]){
+		int[] array = {1,7,3,9,2,8};
+		int[] array1 = {3,2,7,9,40,32};
+		System.out.println("The repeated numners:"); 
+		for(int i=0;i<array.length;i++){
+			for(int j=0;j<array1.length;j++)
+			{
+				if(array[i]==array1[j]){
+					System.out.println(array[i]);
+				}
+			}
+		}
+	}
+}
