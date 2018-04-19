@@ -1,0 +1,22 @@
+
+public class April17_2 {       //Constructor example
+	
+	int mobile;
+	String name;
+	
+	public April17_2(int m, String n)
+	{
+	mobile=m;
+    name=n;
+	}
+	void display()
+	{
+		System.out.println(mobile +" " + name);
+	}
+public static void main(String[] args) {
+	April17_2 stu=new April17_2(987654321,"Dharani");
+	April17_2 stu2=new April17_2(876543210,"Pooja");
+	stu.display();
+	stu2.display();
+}
+}
