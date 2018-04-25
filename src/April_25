@@ -62,7 +62,7 @@ public static void main(String ar[])
   System.out.println("Enter Address:");
   address = sc.nextLine();
   pojo.setAddress(address);
-  System.out.println("Customer details");
+  System.out.println("\n The Given customer details\n");
   System.out.println(pojo);
 }
 }
