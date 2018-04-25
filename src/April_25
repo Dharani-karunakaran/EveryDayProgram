@@ -1,0 +1,68 @@
+import java.util.*;
+public class April_25
+{
+  public static String customerName;
+  public static  int mobileNo;
+  public static String emailID;
+  public static String address;
+  public String getName() 
+  {
+		return customerName;
+	}
+  public void setName(String employeeName)
+  {
+		this.customerName = employeeName;
+  }
+
+  public int getmobileNo() 
+  {
+    return mobileNo;
+  }
+  public void setmobileNo(int employeeId) 
+  {
+    this.mobileNo = employeeId;
+  }
+
+  public String getEmail() {
+    return emailID;
+  }
+
+  public void setEmail(String emailID) {
+    this.emailID = emailID;
+  }
+
+  public String getAddress()
+  {
+    return address;
+  }
+  public void setAddress(String address) {
+    this.address = address;
+  }
+  public String toString() 
+  {
+		String result = "Customer Name: " + getName() + "\n";
+		result += "Contact number: " + getmobileNo() + "\n";
+		result += "Email ID: " + getEmail() + "\n";
+		result += "Address: " + getAddress() + "\n";
+		return result;
+	}
+public static void main(String ar[])
+{
+  April_25 pojo = new April_25();
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter the customer name :");
+  customerName = sc.nextLine();
+  pojo.setName(customerName);
+  System.out.println("Enter the mobile number:");
+  mobileNo = Integer.parseInt(sc.nextLine());
+  pojo.setmobileNo(mobileNo);
+  System.out.println("Enter EmailID:");
+  emailID = sc.nextLine();
+  pojo.setEmail(emailID);
+  System.out.println("Enter Address:");
+  address = sc.nextLine();
+  pojo.setAddress(address);
+  System.out.println("Customer details");
+  System.out.println(pojo);
+}
+}
